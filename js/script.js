@@ -3,9 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const done = document.querySelector("#done");
 
   const processing = document.querySelector(".progress-bar__processing");
-  const progressValueNumber = document.querySelector(
-    ".progress-bar-val__number"
-  );
+  const progressValueNumber = document.querySelector(".progress-bar__number");
 
   let blank, exercise;
 
