@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+html {
+  font-size: 1.1rem;
+}
+
+body {
+  background: url("https://images.pexels.com/photos/1019470/abacus-mathematics-addition-subtraction-1019470.jpeg?cs=srgb&dl=ban-tinh-con-s-g-y-giao-d-c-1019470.jpg&fm=jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 90vh;
+  min-width: 90vw;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.progress-bar {
+  border: 1px solid #2980b9;
+  margin: 10px auto;
+  text-align: center;
+  display: block;
+  width: 60%;
+  height: 25px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-bar__processing {
+  width: 20%;
+  height: 100%;
+  background-color: #0984e3;
+}
+
+.progress-bar-val {
+  color: #f3f3f3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.paper {
+  display: block;
+  width: 100%;
+  height: calc(100% - 45px);
+  padding: 20px;
+  text-align: center;
+  color: #fafafa;
+  font-size: 2rem;
+}
+
+.exercise {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: center;
+}
+
+.exercise span {
+  text-align: center;
+  margin: 5px;
+}
+
+input {
+  border: 5px solid #d35400;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border-radius: 5px;
+  line-height: 35px;
+  background-color: transparent;
+  font-size: 2rem;
+  outline: none;
+  color: transparent;
+  padding-left: 10px;
+  text-shadow: 0 0 0 #f3f3f3;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.true {
+  border: 5px solid #27ae60;
+}
+
+.false {
+  border: 5px solid #ea2027;
+}
+.done {
+  color: #2ecc71;
+  visibility: hidden;
+}
+
+.done.show {
+  visibility: visible;
+}
